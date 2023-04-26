@@ -66,6 +66,6 @@
         &kp LSHFT &kp SEMI     &kp Q    &kp J    &kp K      &kp X         &none    &none     &tog 3 &none &none &kp PG_UP &none     &none           &kp B  &kp M  &kp W &kp V  &kp Z &kp RSHFT
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp ESC   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
-    }
+    };
   };
 };
