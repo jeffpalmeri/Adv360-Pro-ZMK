@@ -4,6 +4,25 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+// Configure the global tapping term (default: 200ms)
+#define CONFIG_TAP_TMG_TAPPING_TERM_MS 200
+
+// Prevent normal rollover on alphas from accidentally triggering mods.
+#define CONFIG_TAP_TMG_MOD_TAP_INTERRUPT
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define CONFIG_TAP_TMG_QUICK_TAP_MAX_INTERVAL 0
+#define GUI_A GUI_T(KC_A)
+#define ALT_S ALT_T(KC_S)
+#define SFT_D SHIFT_T(KC_D)
+#define CTL_F CTRL_T(KC_F)
+
+// Right-hand home row mods
+#define CTL_J RCTRL_T(KC_J)
+#define SFT_K RSHIFT_T(KC_K)
+#define ALT_L LALT_T(KC_L)
+#define GUI_SCLN RGUI_T(KC_SCLN)
+
 / {
     behaviors {
       #include "macros.dtsi"
@@ -26,7 +45,7 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp LPAR   &kp LBRC     &kp LBKT &tog 1                                                                       &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp ESC   &kp GUI_A     &kp ALT_S    &kp SFT_D    &kp CTL_F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp CTL_J  &kp SFT_K     &kp ALT_L    &kp GUI_SCLN &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &tog 4 &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp ESC   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
