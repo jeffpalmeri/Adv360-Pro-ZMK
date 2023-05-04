@@ -12,17 +12,6 @@
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define CONFIG_TAP_TMG_QUICK_TAP_MAX_INTERVAL 0
-#define GUI_A GUI_T(KC_A)
-#define ALT_S ALT_T(KC_S)
-#define SFT_D SHIFT_T(KC_D)
-#define CTL_F CTRL_T(KC_F)
-
-// Right-hand home row mods
-#define CTL_J RCTRL_T(KC_J)
-#define SFT_K RSHIFT_T(KC_K)
-#define ALT_L LALT_T(KC_L)
-#define GUI_SCLN RGUI_T(KC_SCLN)
-
 / {
     behaviors {
       #include "macros.dtsi"
