@@ -35,8 +35,8 @@
         &kp EQUAL &kp N1    &kp N2   &kp LPAR   &kp LBRC     &kp LBKT &tog 1                                                                       &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp SQT     &kp COMMA    &kp DOT    &kp P      &kp Y  &none                                                                        &none &kp F  &kp G  &kp C     &kp R    &kp L    &kp BSLH
         &kp ESC   &hm LGUI A     &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &kp I  &none           &kp LCTRL &mo 2 &none &none &mo 2  &kp RCTRL           &none &kp D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp SQT
-        &kp LSHFT &kp SEMI     &kp Q    &kp J    &kp K      &kp X         &none    &none     &tog 4 &none &none &kp PG_UP &none     &none           &kp B  &kp M  &kp W &kp V  &kp Z &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp ESC   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp LSHFT &kp SEMI     &kp Q    &kp J    &kp K      &kp X         &none    &none     &mo 1 &none &none &kp PG_UP &none     &none           &kp B  &kp M  &kp W &kp V  &kp Z &kp RSHFT
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp ESC   &tog 4              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
@@ -51,9 +51,9 @@
     fn {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &kp FSLH &trans  &trans  &trans
-        &trans &trans &kp MINUS &kp PLUS &kp EQUAL &trans  &none        &trans &trans &none &none &trans &trans        &none &trans &kp COLON &kp LESS_THAN &kp GREATER_THAN  &kp QUESTION  &trans
-        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &kp CARET &kp PIPE &kp HASH  &none                                                       &none &trans &trans &kp FSLH &trans  &kp EXCLAMATION  &trans
+        &trans &kp DOLLAR &kp MINUS &kp PLUS &kp STAR &kp AMPERSAND  &none        &trans &trans &none &none &trans &trans        &none &kp PERCENT &kp COLON &kp W &kp EQUAL  &kp QUESTION  &trans
+        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp LESS_THAN &kp GREATER_THAN &trans  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
