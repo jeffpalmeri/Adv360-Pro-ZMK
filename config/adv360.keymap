@@ -51,8 +51,8 @@
     fn {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &kp CARET &kp PIPE &kp HASH  &none                                                       &none &trans &trans &kp FSLH &trans  &kp EXCLAMATION  &trans
-        &trans &kp DOLLAR &kp MINUS &kp PLUS &kp STAR &kp AMPERSAND  &none        &trans &trans &none &none &trans &trans        &none &kp PERCENT &kp COLON &kp W &kp EQUAL  &kp QUESTION  &trans
+        &trans &trans &trans &kp CARET &kp PIPE &kp HASH  &none                                                       &none &trans &trans &kp FSLH &kp EXCLAMATION  &kp AT  &trans
+        &trans &kp DOLLAR &kp MINUS &kp PLUS &kp STAR &kp AMPERSAND  &none        &trans &trans &none &none &trans &trans        &none &kp PERCENT &kp COLON &kp BACKSLASH &kp EQUAL  &kp QUESTION  &trans
         &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &kp LESS_THAN &kp GREATER_THAN &trans  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
