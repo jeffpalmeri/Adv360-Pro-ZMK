@@ -21,6 +21,17 @@
 #define ROLL_LAYER 5
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
+/ {
     behaviors {
       #include "macros.dtsi"
 
@@ -35,31 +46,6 @@
       };
     };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
-
-/ {
-    macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
-                ;
-        };
-    };
-};
 
   keymap {
     compatible = "zmk,keymap";
