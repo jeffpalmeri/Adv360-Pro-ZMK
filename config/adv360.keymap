@@ -37,10 +37,15 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_tmuxlead {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp ESC>;
+            bindings = <&kp LC(b)>;
+        };
+        combo_test {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp LS(b)>;
         };
     };
 
