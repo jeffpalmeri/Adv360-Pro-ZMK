@@ -69,7 +69,7 @@
 
     dvorak {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp LPAR   &kp LBRC     &kp LBKT &tog NUMBER_LAYER                                                           &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL &kp MINUS    &kp N2   &kp LPAR   &kp LBRC     &kp LBKT &tog NUMBER_LAYER                                                           &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp EQUAL   &kp N0   &kp MINUS
         &kp TAB   &kp SQT     &kp COMMA    &lt 1 DOT    &kp P      &kp Y  &none                                                                   &none &kp F  &kp G  &kp C     &kp R    &kp L    &kp BSLH
         &kp ESC   &hm LGUI A     &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &lt 2 I  &none      &mo 2 &kp LSHFT &kp RSHFT  &kp RCTRL     &none &lt 2 D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp SQT
         &kp LSHFT &kp SEMI     &kp Q    &kp J    &kp K      &kp X                            &mo 1 &kp PG_UP                           &kp B  &kp M  &kp W &kp V  &kp Z &kp RSHFT
