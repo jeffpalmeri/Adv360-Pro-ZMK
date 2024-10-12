@@ -44,13 +44,33 @@
           };
           combo_testing {
               timeout-ms = <50>;
+              key-positions = <30 31>;
+              bindings = <&kp LS(B)>;
+          };
+          combo_i3_session {
+              timeout-ms = <50>;
               key-positions = <0 1>;
               bindings = <&kp LS(B)>;
+          };
+          combo_escape {
+              timeout-ms = <50>;
+              key-positions = <37 39>;
+              bindings = <&kp ESC>;
           };
       };
 
       macros {
           zed_em_kay: zed_em_kay {
+              label = "ZM_zed_em_kay";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              bindings
+                  = <&macro_press &kp LSHFT>
+                  , <&macro_tap &kp Z &kp M &kp K>
+                  , <&macro_release &kp LSHFT>
+                  ;
+          };
+          zed_em_kay2: zed_em_kay2 {
               label = "ZM_zed_em_kay";
               compatible = "zmk,behavior-macro";
               #binding-cells = <0>;
@@ -69,11 +89,11 @@
 
     dvorak {
       bindings = <
-        &kp EQUAL &kp MINUS    &kp MINUS   &kp LPAR   &kp LBRC     &kp LBKT &tog NUMBER_LAYER                                                           &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp EQUAL   &kp N0   &kp MINUS
+        &kp EQUAL &kp MINUS   &kp MINUS   &kp LPAR   &kp LBRC     &kp LBKT &tog NUMBER_LAYER                                                           &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp EQUAL   &kp N0   &kp MINUS
         &kp TAB   &kp SQT     &kp COMMA    &lt 1 DOT    &kp P      &kp Y  &none                                                                   &none &kp F  &kp G  &kp C     &kp R    &kp L    &kp BSLH
-        &kp ESC   &hm LGUI A     &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &lt 2 I  &none      &mo 2 &kp LSHFT &kp RSHFT  &kp RCTRL     &none &lt 2 D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp SQT
-        &kp LSHFT &kp SEMI     &kp Q    &kp J    &kp K      &kp X                            &mo 1 &kp PG_UP                           &kp B  &kp M  &kp W &kp V  &kp Z &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT         &kp BSPC &kp ESC   &tog 4        &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp LCTRL &hm LGUI A  &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &lt 2 I  &none      &mo 2 &kp LSHFT &kp RSHFT  &kp RCTRL     &none &lt 2 D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp RCTRL
+        &kp LCTRL &kp SEMI    &kp Q    &kp J    &kp K      &kp X                            &kp LCTRL &kp PG_UP                           &kp B  &kp M  &kp W &kp V  &kp Z &kp RCTRL
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT         &kp BSPC &kp ESC   &kp BSPC        &kp RCTRL &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
