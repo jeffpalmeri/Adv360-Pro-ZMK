@@ -43,19 +43,34 @@
               bindings = <&kp LC(B)>;
           };
           combo_testing {
-              timeout-ms = <50>;
+              timeout-ms = <35>;
               key-positions = <30 31>;
-              bindings = <&kp LS(B)>;
+              bindings = <&kp LS(C)>;
           };
           combo_i3_session {
               timeout-ms = <50>;
               key-positions = <0 1>;
-              bindings = <&kp LS(B)>;
+              bindings = <&zed_em_kay>;
+          };
+          combo_sanity {
+              timeout-ms = <50>;
+              key-positions = <0 1>;
+              bindings = <&kp LS(A)>;
           };
           combo_escape {
               timeout-ms = <50>;
               key-positions = <37 39>;
               bindings = <&kp ESC>;
+          };
+          combo_delete {
+              timeout-ms = <50>;
+              key-positions = <24 25>;
+              bindings = <&kp BSPC>;
+          };
+          letsseeifthisworks {
+              timeout-ms = <50>;
+              key-positions = <26 27>;
+              bindings = <&kp LGUI &mo 1>;
           };
       };
 
@@ -80,6 +95,34 @@
                   , <&macro_release &kp LSHFT>
                   ;
           };
+          kixie: kixie {
+              label = "ZM_kixie";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              bindings
+                  = <&macro_tap &kp K &kp I &kp X &kp I &kp E>
+                  ;
+          };
+          emacsMx: emacsMx {
+              label = "ZM_emacsMx";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              bindings
+                  = <&macro_press &kp LALT>
+                  , <&macro_tap &kp X>
+                  , <&macro_release &kp LALT>
+                  ;
+          };
+          i3CmdNumber: i3CmdNumber {
+              label = "ZM_emacsMx";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              bindings
+                  = <&macro_press &kp LGUI &mo 1>
+                  , <&macro_tap &kp X>
+                  , <&macro_release &kp LGUI &mo 1>
+                  ;
+          };
       };
 
     };
@@ -91,7 +134,7 @@
       bindings = <
         &kp EQUAL &kp MINUS   &kp MINUS   &kp LPAR   &kp LBRC     &kp LBKT &tog NUMBER_LAYER                                                           &mo 3 &kp RBKT &kp RBRC &kp RPAR    &kp EQUAL   &kp N0   &kp MINUS
         &kp TAB   &kp SQT     &kp COMMA    &lt 1 DOT    &kp P      &kp Y  &none                                                                   &none &kp F  &kp G  &kp C     &kp R    &kp L    &kp BSLH
-        &kp LCTRL &hm LGUI A  &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &lt 2 I  &none      &mo 2 &kp LSHFT &kp RSHFT  &kp RCTRL     &none &lt 2 D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp RCTRL
+        &kp LCTRL &hm LGUI A  &hm LALT O    &hm LCTRL E    &hm LSHIFT U      &lt 2 I  &none      &mo 2 &kp LSHFT &emacsMx  &kp RCTRL     &none &lt 2 D  &hm RSHIFT H  &hm RCTRL T     &hm RALT N    &hm RGUI S &kp RCTRL
         &kp LCTRL &kp SEMI    &kp Q    &kp J    &kp K      &kp X                            &kp LCTRL &kp PG_UP                           &kp B  &kp M  &kp W &kp V  &kp Z &kp RCTRL
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT         &kp BSPC &kp ESC   &kp BSPC        &kp RCTRL &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
@@ -108,7 +151,7 @@
     symbol {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &kp CARET &kp PIPE &kp HASH  &none                                                       &none &trans &trans &kp FSLH &kp EXCLAMATION  &kp AT  &trans
+        &trans &kixie &kp UNDER &kp CARET &kp PIPE &kp HASH  &none                                                    &none &trans &trans &kp FSLH &kp EXCLAMATION  &kp AT  &trans
         &trans &kp DOLLAR &kp MINUS &kp PLUS &kp STAR &kp AMPERSAND  &none        &trans &trans  &trans &trans        &none &kp PERCENT &kp COLON &kp BACKSLASH &kp EQUAL  &kp QUESTION  &trans
         &trans &trans &kp HASH &kp TAB &kp TILDE &trans                                 &trans &trans                 &trans &kp LESS_THAN &kp GREATER_THAN &kp GRAVE  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans        &trans &trans &trans  &trans  &trans
