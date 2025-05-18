@@ -1,0 +1,20 @@
+#include "defs.dtsi"
+
+#define LEFT_TOP_4    &kp EQUAL &kp N1    &kp N2   &kp N3     &kp N4     &kp N5  &trans
+#define LEFT_UPPER_4  &kp TAB   &kp Q     &kp W    &kp LPAR   &kp RPAR   &kp T   &none
+#define LEFT_MIDDLE_4 &kp ESC   &kp A     &kp S    &kp LBRC   &kp RBRC   &kp G   &none                  &kp LCTRL &kp LALT
+#define LEFT_LOWER_4  &kp LSHFT &kp Z     &kp X    &kp LBKT   &kp RBKT   &kp B                          &tog 4
+#define LEFT_BOTTOM_4 &mo 2     &kp GRAVE &kp CAPS &kp LEFT   &kp RIGHT                                 &kp BSPC  &kp ESC   &kp END
+
+#define RIGHT_TOP_4                                     &mo 3   &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp MINUS
+#define RIGHT_UPPER_4                                   &none   &kp Y     &i3_7       &i3_8         &i3_9            &kp KP_MINUS     &kp BSLH
+#define RIGHT_MIDDLE_4 &kp LGUI  &kp RCTRL              &none   &kp H     &i3_4       &i3_5         &i3_6            &kp KP_PLUS      &kp SQT
+#define RIGHT_LOWER_4  &kp PG_UP                        &kp N   &i3_1     &i3_2       &i3_3         &kp KP_ENTER     &kp RSHFT
+#define RIGHT_BOTTOM_4 &kp PG_DN &kp ENTER &kp N0       &kp UP  &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
+
+#define layer4 \
+        LEFT_TOP_4     RIGHT_TOP_4 \
+        LEFT_UPPER_4   RIGHT_UPPER_4 \
+        LEFT_MIDDLE_4  RIGHT_MIDDLE_4 \
+        LEFT_LOWER_4   RIGHT_LOWER_4 \
+        LEFT_BOTTOM_4  RIGHT_BOTTOM_4

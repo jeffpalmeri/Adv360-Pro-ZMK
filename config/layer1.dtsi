@@ -1,21 +1,21 @@
 #include "defs.dtsi"
 #include "undef_rows.dtsi"
 
-#define LEFT_TOP    &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &kp F6 &tog 1
-#define LEFT_UPPER  &trans  &kixie     &kp UNDER  &kp CARET  &kp PIPE  &kp HASH  &none
-#define LEFT_MIDDLE &trans  &kp DOLLAR &kp MINUS  &kp PLUS   &kp STAR  &kp AMPERSAND  &none                      &trans  &trans
-#define LEFT_LOWER  &trans  &trans     &kp HASH   &kp TAB    &kp TILDE &trans                                    &trans
-#define LEFT_BOTTOM &trans  &trans     &trans     &trans     &trans                                              &trans  &trans  &trans
+#define LEFT_TOP_1    &kp EQUAL &kp N1    &kp N2   &kp N3     &kp N4     &kp N5  &trans
+#define LEFT_UPPER_1  &kp TAB   &kp Q     &kp W    &kp LPAR   &kp RPAR   &kp T   &none
+#define LEFT_MIDDLE_1 &kp ESC   &kp A     &kp S    &kp LBRC   &kp RBRC   &kp G   &none                  &kp LCTRL &kp LALT
+#define LEFT_LOWER_1  &kp LSHFT &kp Z     &kp X    &kp LBKT   &kp RBKT   &kp B                          &tog 4
+#define LEFT_BOTTOM_1 &mo 2     &kp GRAVE &kp CAPS &kp LEFT   &kp RIGHT                                 &kp BSPC  &kp ESC   &kp END
 
-#define RIGHT_TOP                                     &mo 3   &kp F7        &kp F8            &kp F9         &kp F10          &kp F11       &kp F12
-#define RIGHT_UPPER                                   &none   &trans        &trans            &kp FSLH       &kp EXCLAMATION  &kp AT        &trans
-#define RIGHT_MIDDLE &trans &trans                    &none   &kp PERCENT   &kp COLON         &kp BACKSLASH  &kp EQUAL        &kp QUESTION  &trans
-#define RIGHT_LOWER  &trans                           &trans  &kp LESS_THAN &kp GREATER_THAN  &kp GRAVE  &trans  &trans
-#define RIGHT_BOTTOM &trans &trans &trans             &trans  &trans        &trans            &trans     &trans
+#define RIGHT_TOP_1                                     &mo 3   &kp N6    &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+#define RIGHT_UPPER_1                                   &none   &kp Y     &kp N7      &kp N8        &kp N9         &kp KP_MINUS     &kp BSLH
+#define RIGHT_MIDDLE_1 &kp LGUI  &kp RCTRL              &none   &kp H     &kp N4      &kp N5        &kp N6         &kp KP_PLUS      &kp SQT
+#define RIGHT_LOWER_1  &kp PG_UP                        &kp N   &kp N1    &kp N2      &kp N3        &kp KP_ENTER   &kp RSHFT
+#define RIGHT_BOTTOM_1 &kp PG_DN &kp ENTER &kp N0       &kp UP  &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
 
 #define layer1 \
-        LEFT_TOP     RIGHT_TOP \
-        LEFT_UPPER   RIGHT_UPPER \
-        LEFT_MIDDLE  RIGHT_MIDDLE \
-        LEFT_LOWER   RIGHT_LOWER \
-        LEFT_BOTTOM  RIGHT_BOTTOM
+        LEFT_TOP_1     RIGHT_TOP_1 \
+        LEFT_UPPER_1   RIGHT_UPPER_1 \
+        LEFT_MIDDLE_1  RIGHT_MIDDLE_1 \
+        LEFT_LOWER_1   RIGHT_LOWER_1 \
+        LEFT_BOTTOM_1  RIGHT_BOTTOM_1

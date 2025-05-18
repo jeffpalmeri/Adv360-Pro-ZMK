@@ -1,0 +1,100 @@
+i3_1: i3_1 {
+    label = "ZM_i3_1";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N1>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_2: i3_2 {
+    label = "ZM_i3_2";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N2>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_3: i3_3 {
+    label = "ZM_i3_3";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N3>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_4: i3_4 {
+    label = "ZM_i3_4";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N4>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_5: i3_5 {
+    label = "ZM_i3_5";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N5>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_6: i3_6 {
+    label = "ZM_i3_6";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N6>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_7: i3_7 {
+    label = "ZM_i3_7";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N7>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_8: i3_8 {
+    label = "ZM_i3_8";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N8>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_9: i3_9 {
+    label = "ZM_i3_9";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N9>
+        , <&macro_release &kp LGUI>
+        ;
+};
+i3_0: i3_0 {
+    label = "ZM_i3_0";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp N0>
+        , <&macro_release &kp LGUI>
+        ;
+};

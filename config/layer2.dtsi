@@ -1,0 +1,21 @@
+#include "defs.dtsi"
+#include "undef_rows.dtsi"
+
+#define LEFT_TOP_2    &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &kp F6         &tog 1
+#define LEFT_UPPER_2  &trans  &kixie     &kp UNDER  &kp CARET  &kp PIPE  &kp HASH       &none
+#define LEFT_MIDDLE_2 &trans  &kp DOLLAR &kp MINUS  &kp PLUS   &kp STAR  &kp AMPERSAND  &none                      &trans  &trans
+#define LEFT_LOWER_2  &trans  &trans     &kp HASH   &kp TAB    &kp TILDE &trans                                    &trans
+#define LEFT_BOTTOM_2 &trans  &trans     &trans     &trans     &trans                                              &trans  &trans  &trans
+
+#define RIGHT_TOP_2                                     &mo 3   &kp F7        &kp F8            &kp F9         &kp F10          &kp F11       &kp F12
+#define RIGHT_UPPER_2                                   &none   &trans        &trans            &kp FSLH       &kp EXCLAMATION  &kp AT        &trans
+#define RIGHT_MIDDLE_2 &trans &trans                    &none   &kp PERCENT   &kp COLON         &kp BACKSLASH  &kp EQUAL        &kp QUESTION  &trans
+#define RIGHT_LOWER_2  &trans                           &trans  &kp LESS_THAN &kp GREATER_THAN  &kp GRAVE      &trans  &trans
+#define RIGHT_BOTTOM_2 &trans &trans &trans             &trans  &trans        &trans            &trans         &trans
+
+#define layer2 \
+        LEFT_TOP_2     RIGHT_TOP_2 \
+        LEFT_UPPER_2   RIGHT_UPPER_2 \
+        LEFT_MIDDLE_2  RIGHT_MIDDLE_2 \
+        LEFT_LOWER_2   RIGHT_LOWER_2 \
+        LEFT_BOTTOM_2  RIGHT_BOTTOM_2
