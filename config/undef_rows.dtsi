@@ -1,0 +1,10 @@
+#undef LEFT_TOP
+#undef RIGHT_TOP
+#undef LEFT_UPPER
+#undef RIGHT_UPPER
+#undef LEFT_MIDDLE
+#undef RIGHT_MIDDLE
+#undef LEFT_LOWER
+#undef RIGHT_LOWER
+#undef LEFT_BOTTOM
+#undef RIGHT_BOTTOM
